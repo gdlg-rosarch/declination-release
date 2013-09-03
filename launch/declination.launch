@@ -1,0 +1,7 @@
+<launch>
+  <group ns="imu">
+    <node pkg="declination" type="compute" name="declination_compute">
+      <remap from="fix" to="/gps/fix" />
+    </node>
+  </group>
+</launch>
